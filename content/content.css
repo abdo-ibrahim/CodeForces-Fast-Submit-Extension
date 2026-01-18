@@ -1,0 +1,414 @@
+/**
+ * CF Fast Submit - Content Styles
+ * Author: Abdulrahman Ibrahim
+ * © 2026
+ */
+
+/* Main Container */
+.cf-fast-submit-container {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 12px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dee2e6;
+}
+
+/* Header */
+.cf-fast-submit-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #007bff;
+}
+
+.cf-fast-submit-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cf-fast-submit-title h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #212529;
+  font-weight: 600;
+}
+
+.cf-fast-submit-title .icon {
+  font-size: 18px;
+}
+
+.cf-fast-submit-status {
+  display: none;
+}
+
+.cf-fast-submit-status .dot {
+  width: 8px;
+  height: 8px;
+  background: #4caf50;
+  border-radius: 50%;
+  animation: pulse-dot 1.5s infinite;
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+}
+
+/* Form Grid */
+.cf-fast-submit-form {
+  display: grid;
+  gap: 10px;
+}
+
+/* Form Row */
+.cf-fast-submit-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .cf-fast-submit-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Form Group */
+.cf-fast-submit-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cf-fast-submit-group label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #495057;
+}
+
+.cf-fast-submit-group select {
+  padding: 6px 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 12px;
+  background: white;
+  color: #212529;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cf-fast-submit-group select:hover {
+  border-color: #007bff;
+}
+
+.cf-fast-submit-group select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+/* Editor Container */
+.cf-fast-submit-editor-container {
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  overflow: hidden;
+  background: white;
+}
+
+.cf-fast-submit-editor-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 8px;
+  background: #f1f3f5;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.cf-fast-submit-editor-toolbar .left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cf-fast-submit-editor-toolbar .file-info {
+  font-size: 11px;
+  color: #6c757d;
+}
+
+.cf-fast-submit-editor-toolbar .right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cf-fast-submit-toolbar-btn {
+  padding: 6px 12px;
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cf-fast-submit-toolbar-btn:hover {
+  background: #e9ecef;
+  border-color: #adb5bd;
+}
+
+/* ACE Editor */
+.cf-fast-submit-editor {
+  height: 200px;
+  width: 100%;
+}
+
+/* File Upload */
+.cf-fast-submit-file-upload {
+  margin-top: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border: 2px dashed #dee2e6;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.cf-fast-submit-file-upload:hover {
+  border-color: #007bff;
+  background: #e7f1ff;
+}
+
+.cf-fast-submit-file-upload input[type="file"] {
+  display: none;
+}
+
+.cf-fast-submit-file-upload label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: #6c757d;
+}
+
+.cf-fast-submit-file-upload label .icon {
+  font-size: 32px;
+}
+
+.cf-fast-submit-file-upload label span {
+  font-size: 14px;
+}
+
+.cf-fast-submit-file-upload.has-file {
+  border-color: #28a745;
+  background: #e8f5e9;
+}
+
+.cf-fast-submit-file-upload.has-file label {
+  color: #2e7d32;
+}
+
+/* Submit Section */
+.cf-fast-submit-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #dee2e6;
+}
+
+.cf-fast-submit-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 11px;
+  color: #6c757d;
+}
+
+.cf-fast-submit-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.cf-fast-submit-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cf-fast-submit-btn-primary {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+}
+
+.cf-fast-submit-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(0, 123, 255, 0.4);
+}
+
+.cf-fast-submit-btn-primary:active {
+  transform: translateY(0);
+}
+
+.cf-fast-submit-btn-primary:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.cf-fast-submit-btn-secondary {
+  background: white;
+  color: #495057;
+  border: 2px solid #dee2e6;
+}
+
+.cf-fast-submit-btn-secondary:hover {
+  background: #f8f9fa;
+  border-color: #adb5bd;
+}
+
+/* Loading State */
+.cf-fast-submit-loading {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Notification */
+.cf-fast-submit-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  z-index: 10000;
+  transform: translateX(400px);
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cf-fast-submit-notification.show {
+  transform: translateX(0);
+}
+
+.cf-fast-submit-notification.success {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+  color: white;
+}
+
+.cf-fast-submit-notification.error {
+  background: linear-gradient(135deg, #dc3545, #bd2130);
+  color: white;
+}
+
+.cf-fast-submit-notification.info {
+  background: linear-gradient(135deg, #17a2b8, #117a8b);
+  color: white;
+}
+
+/* Footer */
+.cf-fast-submit-footer {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #dee2e6;
+  text-align: center;
+  font-size: 10px;
+  color: #6c757d;
+}
+
+.cf-fast-submit-footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.cf-fast-submit-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .cf-fast-submit-container {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    border-color: #2d3748;
+  }
+
+  .cf-fast-submit-header {
+    border-bottom-color: #4a5568;
+  }
+
+  .cf-fast-submit-title h3 {
+    color: #e2e8f0;
+  }
+
+  .cf-fast-submit-group label {
+    color: #a0aec0;
+  }
+
+  .cf-fast-submit-group select {
+    background: #2d3748;
+    border-color: #4a5568;
+    color: #e2e8f0;
+  }
+
+  .cf-fast-submit-editor-container {
+    border-color: #4a5568;
+  }
+
+  .cf-fast-submit-editor-toolbar {
+    background: #2d3748;
+    border-bottom-color: #4a5568;
+  }
+
+  .cf-fast-submit-file-upload {
+    background: #2d3748;
+    border-color: #4a5568;
+  }
+
+  .cf-fast-submit-info {
+    color: #a0aec0;
+  }
+
+  .cf-fast-submit-footer {
+    border-top-color: #4a5568;
+    color: #a0aec0;
+  }
+}
