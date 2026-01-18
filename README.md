@@ -6,6 +6,12 @@
 
 A browser extension for fast code submission on Codeforces.
 
+## Preview
+
+![Preview 1](imgs/preview.png)
+
+![Preview 2](imgs/preview-02.png)
+
 ## Author
 
 **Abdulrahman Ibrahim** - [GitHub](https://github.com/abdo-ibrahim)
